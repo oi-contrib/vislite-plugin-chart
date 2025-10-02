@@ -1,0 +1,36 @@
+{
+  "name": "@vislite/chart",
+  "version": "1.0.0",
+  "description": "一些常用的可视化图表库",
+  "main": "./dist/chart.js",
+  "typings": "./types/index.d.ts",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "dev": "oipage-cli run \"rollup --config ./rollup.config.js -w\" \"oipage-cli serve -p 20000\"",
+    "build": "rollup --config ./rollup.config.js && terser ./dist/chart.js --compress --mangle --output ./dist/chart.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oi-contrib/vislite-plugin-chart.git"
+  },
+  "author": {
+    "name": "zxl20070701",
+    "url": "https://zxl20070701.github.io/notebook/home.html"
+  },
+  "keywords": [
+    "vislite",
+    "plugin",
+    "chart"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.6.1",
+    "terser": "^5.17.1"
+  },
+  "dependencies": {
+    "@vislite/canvas": "^1.0.0",
+    "vislite": "^1.4.0"
+  }
+}

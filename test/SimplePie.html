@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../dist/chart.js"></script>
+    <title>SimplePie</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #root {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+
+        let pie = new Chart.SimplePie({
+            el: document.getElementById("root"),
+            data: [
+                { value: 1048, name: 'Search Engine' },
+                { value: 735, name: 'Direct' },
+                { value: 580, name: 'Email' },
+                { value: 484, name: 'Union Ads' },
+                { value: 300, name: 'Video Ads' }
+            ]
+        })
+
+        console.log(pie)
+
+        setTimeout(function () {
+            pie.setData([
+                { value: 108, name: 'Search Engine' },
+                { value: 175, name: 'Direct' },
+                { value: 80, name: 'Email' },
+                { value: 84, name: 'Union Ads' },
+                { value: 100, name: 'Video Ads' }
+            ])
+        }, 1000)
+
+    </script>
+</body>
+
+</html>
