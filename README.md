@@ -42,8 +42,8 @@ npm install --save @vislite/canvas
 然后直接使用（以饼图为例）：
 
 ```js
-import {SimplePie} from "@vislite/chart"
-let pie = new SimplePie({
+import { Pie } from "@vislite/chart"
+let pie = new Pie({
     el: document.getElementById("root"),
     data: [
         { value: 1048, name: 'Search Engine' },
@@ -51,17 +51,22 @@ let pie = new SimplePie({
         { value: 580, name: 'Email' },
         { value: 484, name: 'Union Ads' },
         { value: 300, name: 'Video Ads' }
-    ]
+    ],
+    isRing: true, // 可选
+    beginDeg: 0, // 可选
+    deg: Math.PI * 1.5 // 可选
 })
 ```
 
 这样一个饼图就出来了:
 
-<img src="./docs/SimplePie.png" />
+<img src="./docs/Pie.png" />
 
 下面是更多图表明细：
 
-- [SimplePie 基本饼图](./docs/SimplePie.md)
+- [Pie 饼图](./docs/Pie.md)
+
+更多图表或特性探索设计中，你也可以给我们[ 留言 ](https://github.com/oi-contrib/vislite-plugin-chart/issues)，告诉我们你的想法或希望提供的图表！
 
 ## 版权
 

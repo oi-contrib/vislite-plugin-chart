@@ -1,0 +1,1 @@
+export default (newValue, oldValue, deep) => (newValue - oldValue) * deep + oldValue

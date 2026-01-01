@@ -1,6 +1,6 @@
 {
   "name": "@vislite/chart",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "一些常用的可视化图表库",
   "main": "./dist/chart.js",
   "typings": "./types/index.d.ts",
@@ -30,7 +30,8 @@
     "terser": "^5.17.1"
   },
   "dependencies": {
-    "@vislite/canvas": "^1.0.0",
-    "vislite": "^1.4.0"
+    "@vislite/canvas": "^1.1.0",
+    "oipage": "^1.5.0",
+    "vislite": "^1.7.0"
   }
 }
