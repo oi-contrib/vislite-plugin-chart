@@ -65,6 +65,7 @@ let pie = new Pie({
 下面是更多图表明细：
 
 - [Pie 饼图](./docs/Pie.md)
+- [Line 折线图](./docs/Line.md)
 
 更多图表或特性探索设计中，你也可以给我们[ 留言 ](https://github.com/oi-contrib/vislite-plugin-chart/issues)，告诉我们你的想法或希望提供的图表！
 
