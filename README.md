@@ -30,7 +30,7 @@
 ## 如何使用？
 
 ```
-npm install --save @vislite/canvas
+npm install --save @vislite/chart
 ```
 
 安装后，准备好渲染位置
